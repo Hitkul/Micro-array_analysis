@@ -1,0 +1,5 @@
+cmake_minimum_required(VERSION 2.8)
+project( graph_module )
+find_package( OpenCV REQUIRED )
+add_executable( graph_module graph_module.cpp )
+target_link_libraries( graph_module ${OpenCV_LIBS} )
